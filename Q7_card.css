@@ -1,0 +1,8 @@
+.card {
+    cursor: pointer;
+    background-color: rgb(68, 249, 255);
+}
+
+.card:hover {
+    opacity: 0.4;
+}

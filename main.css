@@ -1,0 +1,91 @@
+.box12 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main {
+    padding: 20px;
+    background-color: #dddde0;
+    margin: 20px 0;
+}
+
+.output-head,
+.style-heading,
+.html-heading {
+    text-align: center;
+    padding: 30px;
+    border: 2px solid rgb(83, 83, 83);
+    background-color: #f2f3f4;
+    margin: 25px;
+}
+
+.output,
+.style,
+.HTML,
+.question {
+    padding: 30px;
+    border: 2px solid rgb(83, 83, 83);
+    background-color: #f2f3f4;
+    margin: 25px;
+}
+
+pre {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 70vh;
+    /* Enable horizontal scroll */
+    max-width: 100%;
+    /* Ensure it doesn't overflow its container */
+}
+
+.code {
+    font-weight: bold;
+    text-decoration: uppercase;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* General styles */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.box12 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main {
+    padding: 20px;
+    background-color: #dddde0;
+    margin: 20px 0;
+}
+
+
+/* Headings */
+
+.output-head {
+    text-align: center;
+    padding: 30px;
+    border: 2px solid rgb(83, 83, 83);
+    background-color: #f2f3f4;
+    margin: 25px;
+}
+
+
+/* Content */
+
+.output {
+    padding: 30px;
+    border: 2px solid rgb(83, 83, 83);
+    background-color: #f2f3f4;
+    margin: 25px;
+}

@@ -1,0 +1,33 @@
+/* Reset margins, paddings, and set box-sizing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Container styling */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+/* Circular image styling */
+
+.circular-image {
+    width: 200px;
+    /* Adjust size as needed */
+    height: 200px;
+    /* Adjust size as needed */
+    border-radius: 50%;
+    border: 5px solid #000;
+    /* Optional: add border to the circular image */
+    object-fit: cover;
+    /* Ensure the image covers the entire circular area */
+}

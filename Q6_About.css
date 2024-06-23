@@ -1,0 +1,21 @@
+body {
+    background-color: #b6adad;
+}
+
+.container212 {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 8%;
+    padding: 14px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.para1 {
+    margin: 33px 0;
+}
+
+.image1 {
+    width: 90%;
+}

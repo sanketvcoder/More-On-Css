@@ -1,0 +1,46 @@
+/* Reset margins, paddings, and set box-sizing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Container styling */
+
+.container {
+    background-color: blue;
+    height: 60px;
+    padding: 14px;
+}
+
+
+/* Navbar styling */
+
+.navbar {
+    height: 40px;
+    list-style: none;
+    /* Remove default list styling */
+    display: flex;
+    /* Use flexbox for better alignment */
+    align-items: center;
+    /* Vertically center the items */
+}
+
+
+/* Navigation link styling */
+
+.nav-links {
+    margin: 0 14px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    /* Adjust padding for better alignment */
+    border-radius: 8%;
+    transition: all 0.5s;
+    border: 2px solid black;
+}

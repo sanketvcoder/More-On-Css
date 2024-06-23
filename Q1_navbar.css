@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: inline-block;
+    line-height: 31px;
+    margin: 0 14px;
+}
+
+.container-1 {
+    background-color: blue;
+    height: 60px;
+    padding: 14px;
+}
+
+.navbar {
+    height: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 8%;
+    transition: all 0.5s;
+}
+
+a:hover {
+    background: darkblue;
+    font-size: 17px;
+}
+
+
+/* Base styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: #dddde0;
+    padding: 10px 0;
+    /* Adjust padding as needed */
+    margin: 10px 0;
+    /* Adjust margin as needed */
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links {
+    margin: 0 14px;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 8%;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover {
+    background-color: #cccccc;
+    font-size: 17px;
+    /* Increase font size on hover (optional) */
+}
+
+
+/* Responsive Styles (Media Queries) */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        /* Stack navigation links vertically */
+        align-items: center;
+        /* Center navigation links horizontally */
+        text-align: center;
+        /* Center text content of navigation links */
+    }
+    .nav-links {
+        margin: 10px 0;
+        /* Adjust margin for vertical layout */
+    }
+    .toggle-btn {
+        display: block;
+        /* Show toggle button on smaller screens */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        /* Adjust position as needed */
+        padding: 10px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .toggle-btn .bar {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        margin: 5px auto;
+        /* Center bars horizontally */
+    }
+}

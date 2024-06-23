@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Css</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="box12">
+        <div class="main">
+            <h1 class="output-head">Personal Details</h1>
+            <div class="output">
+                <p>Name: Sanket Kumar Verma</p>
+                <p>Registered E-Mail: sanketv403@gmail.com</p>
+            </div>
+            <h1 class="output-head">Course Details</h1>
+            <div class="output">
+                <p>Course Name: Full Stack Development</p>
+                <p>Batch: April 2024</p>
+            </div>
+            <h1 class="output-head">Assignment Details</h1>
+            <div class="output">
+                <p>Assignment Name: More on CSS</p>
+                <p>Module Number: 18</p>
+            </div>
+        </div>
+        </ul>
+        <ul class="main">
+            <li class="min">
+                <ul class="data">
+                    <li class="output-head">
+                        <h1>Output</h1>
+                    </li>
+                    <li class="question">
+                        <b>Q1.</b>Create a navigation bar similar to the below-mentioned image. The navigation bar must contain 5 navigation links that are properly placed within the navigation bar using the CSS box model. The navigation items must change
+                        their text color on hover
+                    </li>
+                    <li class="output">
+                        <!DOCTYPE html>
+                        <html lang="en">
+
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>NavBar</title>
+                            <link rel="stylesheet" href="Q1_navbar.css">
+                        </head>
+
+                        <body>
+                            <div class="container-1">
+                                <ul class="navbar">
+                                    <li class="nav-links"><a href="#">Home</a></li>
+                                    <li class="nav-links"><a href="#">AboutUs</a></li>
+                                    <li class="nav-links"><a href="#">Contact</a></li>
+                                    <li class="nav-links"><a href="#">Blog</a></li>
+                                    <li class="nav-links"><a href="#">Login</a></li>
+                                </ul>
+                            </div>
+                            <button class="toggle-btn">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </button>
+                            <script>
+                                const toggleBtn = document.querySelector('.toggle-btn');
+                                const navbar = document.querySelector('.navbar');
+
+                                toggleBtn.addEventListener('click', () => {
+                                    navbar.classList.toggle('active'); // Toggle active class on click
+                                });
+                            </script>
+                        </body>
+
+                        </html>
+                    </li>
+                    <li class="style-heading">
+                        <h1>Style</h1>
+                    </li>
+                    <li class="style">
+                        <pre><code>
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+    
+                            .nav-links {
+                                display: inline-block;
+                                line-height: 31px;
+                                margin: 0 14px;
+                            }
+    
+                            .container-1 {
+                                background-color: blue;
+                                height: 60px;
+                                padding: 14px;
+                            }
+    
+                            .navbar {
+                                height: 40px;
+                            }
+    
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                padding: 14px;
+                                border-radius: 8%;
+                                transition: all 0.5s;
+                            }
+    
+                            a:hover {
+                                background: darkblue;
+                                font-size: 17px;
+                            }
+                        </code></pre>
+                    </li>
+                    <li class="html-heading">
+                        <h1>HTML</h1>
+                    </li>
+                    <li class="HTML">
+                        <pre><code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang=&quot;en&quot;&gt;
+                            &lt;head&gt;
+                                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                                &lt;title&gt;NavBar&lt;/title&gt;
+                                &lt;link rel=&quot;stylesheet&quot; href=&quot;Q1_navbar.css&quot;&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;div class=&quot;container&quot;&gt;
+                                    &lt;ul class=&quot;navbar&quot;&gt;
+                                        &lt;li class=&quot;nav-links&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class=&quot;nav-links&quot;&gt;&lt;a href=&quot;#&quot;&gt;AboutUs&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class=&quot;nav-links&quot;&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class=&quot;nav-links&quot;&gt;&lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class=&quot;nav-links&quot;&gt;&lt;a href=&quot;#&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="main">
+            <li class="min">
+                <ul class="data">
+                    <li class="output-head">
+                        <h1>Output</h1>
+                    </li>
+                    <li class="question">
+                        <b>Q2.</b>Create a div centered with an image and paragraph similar to the image mentioned below.
+                    </li>
+                    <li class="output">
+                        <!DOCTYPE html>
+                        <html lang="en">
+
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Q2_Card_pw</title>
+                            <link rel="stylesheet" href="Q2_img_para_card.css">
+                        </head>
+
+                        <body>
+                            <div class="container">
+                                <div class="card">
+                                    <div class="para">
+                                        <img src="image.png" alt="" class="img-link">
+                                        <p class="cont">
+                                            <b>Course Name:</b> PW Skills full stack web development
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </body>
+
+                        </html>
+                    </li>
+                    <li class="style-heading">
+                        <h1>Style</h1>
+                    </li>
+                    <li class="style">
+                        <pre><code>
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+    
+                            .container {
+                                text-align: center;
+                                height: 100vh;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+    
+                            .card {
+                                border-radius: 8%;
+                                width: 30%;
+                                margin: 0 auto;
+                                padding: 14px;
+                                height: 30%;
+                                width: 18%;
+                                background-color: rgba(255, 255, 0, 0.876);
+                            }
+    
+                            .img-link {
+                                width: 100%;
+                                border-radius: 8%;
+                            }
+    
+                            .cont {
+                                margin-top: 14px;
+                            }
+                        </code></pre>
+                    </li>
+                    <li class="html-heading">
+                        <h1>HTML</h1>
+                    </li>
+                    <li class="HTML">
+                        <pre><code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang=&quot;en&quot;&gt;
+                            &lt;head&gt;
+                                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                                &lt;title&gt;Q2_Card_pw&lt;/title&gt;
+                                &lt;link rel=&quot;stylesheet&quot; href=&quot;Q2_img_para_card.css&quot;&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;div class=&quot;container&quot;&gt;
+                                    &lt;div class=&quot;card&quot;&gt;
+                                        &lt;div class=&quot;para&quot;&gt;
+                                            &lt;img src=&quot;image.png&quot; alt=&quot;&quot; class=&quot;img-link&quot;&gt;
+                                            &lt;p class=&quot;cont&quot;&gt;
+                                                &lt;b&gt;Course Name:&lt;/b&gt; PW Skills full stack web development
+                                            &lt;/p&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="main">
+            <li class="min">
+                <ul class="data">
+                    <li class="output-head">
+                        <h1>Output</h1>
+                    </li>
+                    <li class="question">
+                        <b>Q3.</b>Create a navigation bar similar to question 1. For each navigation item, use a different border style
+                    </li>
+                    <li class="output">
+                        <!DOCTYPE html>
+                        <html lang="en">
+
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>NavBar</title>
+                            <link rel="stylesheet" href="Q1_navbar.css">
+                        </head>
+
+                        <body>
+                            <div class="container-1">
+                                <ul class="navbar">
+                                    <li class="nav-links dotted" style="border:2px dotted white; "><a href="# ">Dotted
+                                            Border</a></li>
+                                    <li class="nav-links dashed" style="border:2px dashed white; "><a href="#">Dashed
+                                            Border</a></li>
+                                    <li class="nav-links solid" style="border:2px solid white; "><a href="# ">Solid
+                                            Border</a></li>
+                                    <li class="nav-links double" style="border:3px double white; "><a href="#">Double
+                                            Border</a></li>
+                                    <li class="nav-links groove" style="border:2px groove white; "><a href="# ">Groove
+                                            Border</a></li>
+                                    <li class="nav-links ridge" style="border:2px ridge white; "><a href="#">Ridge
+                                            Border</a></li>
+                                    <li class="nav-links inset" style="border:2px inset white; "><a href="# ">Inset
+                                            Border</a></li>
+                                    <li class="nav-links outset" style="border:2px outset white; "><a href="#">Outset
+                                            Border</a></li>
+                                    <li class="nav-links no-boder" style="border:none;">
+                                        <a href="#">No Border</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </body>
+
+                        </html>
+                    </li>
+                    <li class="style-heading">
+                        <h1>Style</h1>
+                    </li>
+                    <li class="style">
+
+                        <pre><code>
+                            /* Reset margins, paddings, and set box-sizing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Container styling */
+
+.container {
+    background-color: blue;
+    height: 60px;
+    padding: 14px;
+}
+
+
+/* Navbar styling */
+
+.navbar {
+    height: 40px;
+    list-style: none;
+    /* Remove default list styling */
+    display: flex;
+    /* Use flexbox for better alignment */
+    align-items: center;
+    /* Vertically center the items */
+}
+
+
+/* Navigation link styling */
+
+.nav-links {
+    margin: 0 14px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    /* Adjust padding for better alignment */
+    border-radius: 8%;
+    transition: all 0.5s;
+    border: 2px solid black;
+}
+                        </code></pre>
+                    </li>
+                    <li class="html-heading">
+                        <h1>HTML</h1>
+                    </li>
+                    <li class="HTML">
+                        <pre><code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang=&quot;en&quot;&gt;
+                            
+                            &lt;head&gt;
+                                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                                &lt;title&gt;NavBar&lt;/title&gt;
+                                &lt;link rel=&quot;stylesheet&quot; href=&quot;Q1_navbar.css&quot;&gt;
+                            &lt;/head&gt;
+                            
+                            &lt;body&gt;
+                                &lt;div class=&quot;container&quot;&gt;
+                                    &lt;ul class=&quot;navbar&quot;&gt;
+                                        &lt;li class=&quot;nav-links dotted&quot; style=&quot;border:2px dotted white;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Dotted Border&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class=&quot;nav-links dashed&quot; style=&quot;border:2px dashed white;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Dashed Border&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class=&quot;nav-links solid&quot; style=&quot;border:2px solid white;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Solid Border&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class=&quot;nav-links double&quot; style=&quot;border:3px double white;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Double Border&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class=&quot;nav-links groove&quot; style=&quot;border:2px groove white;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Groove Border&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class=&quot;nav-links ridge&quot; style=&quot;border:2px ridge white;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Ridge Border&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class=&quot;nav-links inset&quot; style=&quot;border:2px inset white;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Inset Border&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class=&quot;nav-links outset&quot; style=&quot;border:2px outset white;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Outset Border&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class=&quot;nav-links no-boder&quot; style=&quot;border:none;&quot;&gt;&lt;a href=&quot;#&quot;&gt;No Border&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/body&gt;
+                            
+                            &lt;/html&gt;
+                        </code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="main">
+            <li class="min">
+                <ul class="data">
+                    <li class="output-head">
+                        <h1>Output</h1>
+                    </li>
+                    <li class="question">
+                        <b>Q4.</b> Create a sim!le web!age with an image and make the image circular using border-radius.
+                    </li>
+                    <li class="output">
+                        <!DOCTYPE html>
+                        <html lang="en">
+
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Image with Circular Border</title>
+                            <link rel="stylesheet" href="Q4_img_circle.css">
+                        </head>
+
+                        <body>
+                            <div class="container">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1X-AN3kFs-XAzQU5uTMgBv7IXiWaT-L7zeQ&s" alt="Circular Image" class="circular-image">
+                            </div>
+                        </body>
+
+                        </html>
+                    </li>
+                    <li class="style-heading">
+                        <h1>Style</h1>
+                    </li>
+                    <li class="style">
+
+                        <pre><code>
+/* Reset margins, paddings, and set box-sizing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Container styling */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+/* Circular image styling */
+
+.circular-image {
+    width: 200px;
+    /* Adjust size as needed */
+    height: 200px;
+    /* Adjust size as needed */
+    border-radius: 50%;
+    border: 5px solid #000;
+    /* Optional: add border to the circular image */
+    object-fit: cover;
+    /* Ensure the image covers the entire circular area */
+}
+                        </code></pre>
+                    </li>
+                    <li class="html-heading">
+                        <h1>HTML</h1>
+                    </li>
+                    <li class="HTML">
+                        <pre><code>
+                            &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Image with Circular Border&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;Q4_img_circle.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1X-AN3kFs-XAzQU5uTMgBv7IXiWaT-L7zeQ&amp;s&quot; alt=&quot;Circular Image&quot; class=&quot;circular-image&quot;&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+                        </code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="main">
+            <li class="min">
+                <ul class="data">
+                    <li class="output-head">
+                        <h1>Output</h1>
+                    </li>
+                    <li class="question">
+                        <b>Q5.</b> Create a sim!le blog website about Google Ronts. The web!age must have the heading with “Oswald” Ront align 'enter to the page, below the heading have an image oR Google Ronts and a paragraph about Google Ronts in Ront
+                        “Montserrat” paragraph Ront style should be“montserrat” Ront
+                    </li>
+                    <li class="output">
+                        <!DOCTYPE html>
+                        <html lang="en">
+
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Google Fonts Blog</title>
+                            <!-- Link to Google Fonts -->
+                            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+                            <link rel="stylesheet" href="Q5_google_font.css">
+                        </head>
+
+                        <body>
+                            <div class="container__12">
+                                <h1 class="heading">Google Fonts Blog</h1>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZpoYdXH8RUD4bHsHdZsMhDFUHPCujIH26GA&s" alt="Google Fonts" class="image">
+                                <p class="paragraph">
+                                    Google Fonts is a library of 1,094 free licensed font families and APIs for conveniently using the fonts via CSS and Android. The library also has delightful and beautifully crafted icons for common actions and items. Google Fonts makes it quick and easy
+                                    for everyone to use web fonts, with no need to worry about licensing, and it's all free.
+                                </p>
+                            </div>
+                        </body>
+
+                        </html>
+                    </li>
+                    <li class="style-heading">
+                        <h1>Style</h1>
+                    </li>
+                    <li class="style">
+
+                        <pre><code>
+                            /* Reset margins, paddings, and set box-sizing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Container styling */
+
+.container__12 {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    height: 100vh;
+}
+
+
+/* Heading styling */
+
+.heading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Image styling */
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 14px;
+}
+
+
+/* Paragraph styling */
+
+.paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+                        </code></pre>
+                    </li>
+                    <li class="html-heading">
+                        <h1>HTML</h1>
+                    </li>
+                    <li class="HTML">
+                        <pre><code>
+                            &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Google Fonts Blog&lt;/title&gt;
+    &lt;!-- Link to Google Fonts --&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Oswald:wght@400;500;600&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;Q5_google_font.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;container__12&quot;&gt;
+        &lt;h1 class=&quot;heading&quot;&gt;Google Fonts Blog&lt;/h1&gt;
+        &lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZpoYdXH8RUD4bHsHdZsMhDFUHPCujIH26GA&amp;s&quot; alt=&quot;Google Fonts&quot; class=&quot;image&quot;&gt;
+        &lt;p class=&quot;paragraph&quot;&gt;
+            Google Fonts is a library of 1,094 free licensed font families and APIs for conveniently using the fonts via CSS and Android. The library also has delightful and beautifully crafted icons for common actions and items. Google Fonts makes it quick and easy
+            for everyone to use web fonts, with no need to worry about licensing, and it's all free.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+                        </code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="main">
+            <li class="min">
+                <ul class="data">
+                    <li class="output-head">
+                        <h1>Output</h1>
+                    </li>
+                    <li class="question">
+                        <b>Q6.</b>Create a sim!le website as mentioned in the below image. You 'an get the assets by visiting https://pwskills.com/about-us.
+
+                    </li>
+                    <li class="output">
+                        <!DOCTYPE html>
+                        <html lang="en">
+
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>About Us</title>
+                            <link rel="stylesheet" href="Q6_About.css">
+                        </head>
+
+                        <body>
+                            <div class="container212">
+                                <div class="main-base">
+                                    <h1 class="head">About Us</h1>
+                                </div>
+                                <p class="para1">
+                                    PW Skills mission to parameter through every student professional's outlook towards jobs and change their attitude and perspective from " How Can I Do It? " to " Of Course I Can Do It ". We aim to do this by providing exceptional up skilling courses at
+                                    affordable rates. while being tech-forward so anymore. anywher can access and improve their ability to be successful in life
+                                </p>
+                                <img src="https://pwskills.com/images/aboutUs/aboutUs.png" alt="" class="image1">
+                            </div>
+                        </body>
+
+                        </html>
+                    </li>
+                    <li class="style-heading">
+                        <h1>Style</h1>
+                    </li>
+                    <li class="style">
+
+                        <pre><code>
+                            body {
+                                background-color: #b6adad;
+                            }
+                            
+                            .container212 {
+                                text-align: center;
+                                width: 90%;
+                                margin: 0 auto;
+                                background-color: #f5f5f5;
+                                border-radius: 8%;
+                                padding: 14px;
+                                box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+                            }
+                            
+                            .para1 {
+                                margin: 33px 0;
+                            }
+                            
+                            .image1 {
+                                width: 90%;
+                            }
+                        </code></pre>
+                    </li>
+                    <li class="html-heading">
+                        <h1>HTML</h1>
+                    </li>
+                    <li class="HTML">
+                        <pre><code>
+                            &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;About Us&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;Q6_About.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;container2&quot;&gt;
+        &lt;div class=&quot;main-base&quot;&gt;
+            &lt;h1 class=&quot;head&quot;&gt;About Us&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;para1&quot;&gt;
+            PW Skills mission to parameter through every student professional&#39;s outlook towards jobs and change their attitude and perspective from &quot; How Can I Do It? &quot; to &quot; Of Course I Can Do It &quot;. We aim to do this by providing exceptional up skilling courses at
+            affordable rates. while being tech-forward so anymore. anywher can access and improve their ability to be successful in life
+        &lt;/p&gt;
+        &lt;img src=&quot;https://pwskills.com/images/aboutUs/aboutUs.png&quot; alt=&quot;&quot; class=&quot;image1&quot;&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+                        </code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="main">
+            <li class="min">
+                <ul class="data">
+                    <li class="output-head">
+                        <h1>Output</h1>
+                    </li>
+                    <li class="question">
+                        <b>Q7.</b>; Create a simple webpage with a card similar to question number 2. The card must be semi-transparent as default and on hovering the card must be displayed clearly. Use CSS opacity to achieve this output.
+                    </li>
+                    <li class="output">
+                        <!DOCTYPE html>
+                        <html lang="en">
+
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Q2_Card_pw</title>
+                            <link rel="stylesheet" href="Q2_img_para_card.css">
+                            <link rel="stylesheet" href="Q7_card.css">
+                        </head>
+
+                        <body>
+                            <div class="container234">
+                                <div class="card">
+                                    <div class="para">
+                                        <img src="image.png" alt="" class="img-link">
+                                        <p class="cont">
+                                            <b>Course Name:</b> PW Skills full stack web development
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </body>
+
+                        </html>
+                    </li>
+                    <li class="style-heading">
+                        <h1>Style</h1>
+                    </li>
+                    <li class="style">
+                        <pre><code>
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+    
+                            .container {
+                                text-align: center;
+                                height: 100vh;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            
+                            .card {
+                                cursor: pointer;
+                                background-color: rgb(68, 249, 255);
+                            }
+                            
+                            .card:hover {
+                                opacity: 0.4;
+                            }
+                            .card {
+                                border-radius: 8%;
+                                width: 30%;
+                                margin: 0 auto;
+                                padding: 14px;
+                                height: 30%;
+                                width: 18%;
+                            }
+    
+                            .img-link {
+                                width: 100%;
+                                border-radius: 8%;
+                            }
+    
+                            .cont {
+                                margin-top: 14px;
+                            }
+                        </code></pre>
+                    </li>
+                    <li class="html-heading">
+                        <h1>HTML</h1>
+                    </li>
+                    <li class="HTML">
+                        <pre><code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang=&quot;en&quot;&gt;
+                            &lt;head&gt;
+                                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                                &lt;title&gt;Q2_Card_pw&lt;/title&gt;
+                                &lt;link rel=&quot;stylesheet&quot; href=&quot;Q2_img_para_card.css&quot;&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;div class=&quot;container&quot;&gt;
+                                    &lt;div class=&quot;card&quot;&gt;
+                                        &lt;div class=&quot;para&quot;&gt;
+                                            &lt;img src=&quot;image.png&quot; alt=&quot;&quot; class=&quot;img-link&quot;&gt;
+                                            &lt;p class=&quot;cont&quot;&gt;
+                                                &lt;b&gt;Course Name:&lt;/b&gt; PW Skills full stack web development
+                                            &lt;/p&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="main">
+            <li class="min">
+                <ul class="data">
+                    <li class="output-head">
+                        <h1>Output</h1>
+                    </li>
+                    <li class="question">
+                        <b>Q8.</b>; Create a simple list of items as mentioned in the below image.
+                    </li>
+                    <li class="output">
+                        <!DOCTYPE html>
+                        <html lang="en">
+
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Requirement</title>
+                        </head>
+
+                        <body>
+                            <div class="box-21" style="border: 2px solid black; width:483px; padding:14px;">
+                                <h1>Requirements</h1>
+                                <ol type="i">
+                                    <li>Sysytem with minimum i3 processor or better</li>
+                                    <li>At least 4 GB of RAM</li>
+                                    <li>Working internet connection</li>
+                                    <li>Dedication to learn</li>
+                                </ol>
+                            </div>
+                        </body>
+
+                        </html>
+                    </li>
+                    <li class="style-heading">
+                        <h1>Style</h1>
+                    </li>
+                    <li class="style">
+
+                        <pre><code>
+                        .box-21{
+                            border: 2px solid black;
+                            width:483px; padding:14px;
+                        }
+                        </code></pre>
+                    </li>
+                    <li class="html-heading">
+                        <h1>HTML</h1>
+                    </li>
+                    <li class="HTML">
+                        <pre><code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang=&quot;en&quot;&gt;
+                        
+                        &lt;head&gt;
+                            &lt;meta charset=&quot;UTF-8&quot;&gt;
+                            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                            &lt;title&gt;Requirement&lt;/title&gt;
+                        &lt;/head&gt;
+                        
+                        &lt;body&gt;
+                            &lt;div class=&quot;box&quot; style=&quot;border: 2px solid black; width:483px; padding:14px;&quot;&gt;
+                                &lt;h1&gt;Requirements&lt;/h1&gt;
+                                &lt;ol type=&quot;i&quot;&gt;
+                                    &lt;li&gt;System with minimum i3 processor or better&lt;/li&gt;
+                                    &lt;li&gt;At least 4 GB of RAM&lt;/li&gt;
+                                    &lt;li&gt;Working internet connection&lt;/li&gt;
+                                    &lt;li&gt;Dedication to learn&lt;/li&gt;
+                                &lt;/ol&gt;
+                            &lt;/div&gt;
+                        &lt;/body&gt;
+                        
+                        &lt;/html&gt;
+                        </code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
